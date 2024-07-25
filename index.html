@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanshika Sharma - CV</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f4f8;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-heading {
+      border-bottom: 2px solid #4A90E2;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    .table-container {
+      overflow-x: auto;
+    }
+    .highlight {
+      background-color: #fef3c7;
+    }
+    .theme-dark {
+      background-color: #1a202c;
+      color: #f0f4f8;
+    }
+    .theme-dark .section {
+      background-color: #2d3748;
+    }
+    .highlight-on-hover:hover {
+      background-color: #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <header class="bg-gradient-to-r from-blue-500 to-teal-500 text-white py-6 text-center">
+    <h1 class="text-4xl font-bold">Vanshika Sharma</h1>
+    <p class="text-lg">Passionate Java Programmer & Eager Learner</p>
+  </header>
+
+  <div class="text-center py-4">
+    <button onclick="toggleTheme()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Toggle Theme</button>
+  </div>
+
+  <main>
+    <!-- Professional Profile Section -->
+    <section id="profile" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-pink-600">Professional Profile</h2>
+      <p class="text-gray-700">I am Vanshika Sharma, a fresher with a B.E. in Electronics and Communication from Chandigarh College of Engineering and Technology. Passionate about Java programming and AI/ML, I have been recognized with a Rs. 4 Lakhs merit scholarship for academic excellence and ranked 1st in the annual college feast. I am eager to apply my problem-solving skills in a dynamic professional environment.
+
+
+
+
+
+
+        .</p>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-purple-600">Education</h2>
+      <div class="table-container">
+        <table class="min-w-full bg-white">
+          <thead class="bg-purple-100 border-b">
+            <tr>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Institution</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Degree</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Field</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Passing year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">Chandigarh College of Engineering and Technology</td>
+              <td class="py-3 px-4">B.E.</td>
+              <td class="py-3 px-4">Electronics and Communication Engineering</td>
+              <td class="py-3 px-4">2025</td>
+            </tr>
+            <tr class="border-b highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">SP Smart Sr. Sec. School</td>
+              
+              <td class="py-3 px-4">12th</td>
+              <td class="py-3 px-4">Science</td>
+              <td class="py-3 px-4">2021</td>
+              
+            </tr>
+            <tr class="highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">B.S.K. Hr. Sec. School</td>
+              <td class="py-3 px-4">10th</td>
+              <td class="py-3 px-4">General Education</td>
+              <td class="py-3 px-4">2018</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-teal-600">Achievements</h2>
+      <div class="table-container">
+        <table class="min-w-full bg-white">
+          <thead class="bg-teal-100 border-b">
+            <tr>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Achievement</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">Merit Scholarship</td>
+              <td class="py-3 px-4">Received a Merit Scholarship worth Rs.4 Lakhs for all 4 years of engineering, covering all expenses including maintenance provided by the government.</td>
+            </tr>
+            <tr class="border-b highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">IPD Ranking</td>
+              <td class="py-3 px-4">Ranked 1st in IPD (annual feast of college)</td>
+            </tr>
+            <tr class="border-b highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">12th Board Position</td>
+              <td class="py-3 px-4">Position holder in 12th boards with 97.6%</td>
+            </tr>
+           
+              
+            </tr>
+            <tr class="highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">Dance Battle</td>
+              <td class="py-3 px-4">Ranked 2nd in Dance Battle (district level)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-indigo-600">Projects</h2>
+      <div class="table-container">
+        <table class="min-w-full bg-white">
+          <thead class="bg-indigo-100 border-b">
+            <tr>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Title</th>
+              <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">Optical Communication</td>
+              <td class="py-3 px-4">Designed a model of an optical communication system at NIT Surathkal.</td>
+            </tr>
+            <tr class="border-b highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">Mental Fitness Tracker</td>
+              <td class="py-3 px-4">Analyzed data using foundational basics of AI and ML and conceptualized the code using Python.</td>
+            </tr>
+            <tr class="highlight-on-hover" onclick="showDetails(this)">
+              <td class="py-3 px-4">Title</td>
+              <td class="py-3 px-4">Description</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Position of Responsibility Section -->
+    <section id="responsibility" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-teal-600">Position of Responsibility</h2>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>Executive Member of ArtStrong Club</li>
+        <li>Head of Mess Committee in Hostel</li>
+        <li>Leader of the Class throughout class till 10th</li>
+      </ul>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-yellow-600">Languages</h2>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>English</li>
+        <li>Hindi</li>
+        <li>Punjabi</li>
+      </ul>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-red-600">Courses</h2>
+      <ul class="list-disc list-inside text-gray-800">
+        <li>Java Programming by Great Learning Academy</li>
+        <li>Python for Machine Learning by Great Learning Academy</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-white rounded-lg shadow-lg mb-8">
+      <h2 class="text-2xl font-semibold section-heading text-blue-600">Contact</h2>
+      <p class="text-gray-700">Email: <a href="mailto:vanshikasharma849294@gmail.com" class="text-blue-600">vanshikasharma849294@gmail.com</a></p>
+      <p class="text-gray-700">LinkedIn: <a href="https://www.linkedin.com/in/vanshika-sharma-bb5184280" class="text-blue-600" target="_blank">Vanshika Sharma</a></p>
+      <p class="text-gray-700">Address: Sector-26, Chandigarh</p>
+      <p class="text-gray-700">Contact Number: 8492943818</p>
+    </section>
+  </main>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('theme-dark');
+    }
+    
+    function showDetails(row) {
+      alert('Details clicked for: ' + row.cells[0].innerText);
+    }
+  </script>
+</body>
+</html>
